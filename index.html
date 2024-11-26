@@ -4,12 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vehicle Parking System</title>
+    <link rel="shortcut icon" type="image/x-icon" href="vps_logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="stats-container">
+      <h2 style="color: white" id="date"></h2>
+      <h3 align="center">Entered: <span id="entered_count">0</span></h3>
+      <h3 align="center">Exit: <span id="exit_count">0</span></h3>
+    </div>
     <div class="container">
       <!-- Log in screen -->
-      <section id="login-screen" class="screen">
+      <section id="login-screen" class="screen active">
         <div class="login-container">
           <h1>Vehicle Parking System</h1>
           <form>
@@ -21,7 +27,7 @@
       </section>
 
       <!-- Welcome Screen -->
-      <section id="welcome-screen" class="screen active">
+      <section id="welcome-screen" class="screen">
         <h1>Vehicle Parking System</h1>
         <div class="logo">&#128663;</div>
         <button
@@ -29,6 +35,7 @@
           onclick="nextScreen('vehicle-type-screen')">
           Start
         </button>
+        <button id="logout" class="dark-red-button">Logout</button>
       </section>
 
       <!-- Vehicle Type Selection Screen -->
@@ -38,7 +45,8 @@
         </button>
         <h2>Choose Vehicle Type</h2>
         <p>
-          <strong>PWD Parking:</strong> <span id="pwd-status">Available</span>
+          <strong>PWD Parking:</strong> <span id="pwd1">PWD1</span> |
+          <span id="pwd2">PWD2</span>
         </p>
         <button class="dark-green-button" onclick="chooseVehicleType('Car')">
           Car
@@ -86,9 +94,7 @@
         </p>
         <div class="parking-slots" id="parking-slots"></div>
         <p id="nearest-slot"></p>
-        <button class="dark-green-button" onclick="showThankYouMessage()">
-          Proceed
-        </button>
+        <button class="dark-green-button" onclick="refresh()">Refresh</button>
       </section>
     </div>
     <script
