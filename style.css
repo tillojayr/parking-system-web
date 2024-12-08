@@ -252,43 +252,19 @@ button {
 }
 
 .about-us {
-  position: fixed; /* Fixes the element at the bottom of the viewport */
-  bottom: 0; /* Aligns the element to the bottom */
-  left: 0; /* Aligns it to the left edge */
-  width: 100%; /* Ensures it spans the entire width of the screen */
-  text-align: center;
-  padding: 20px;
-  z-index: 1000; /* Ensures it stays on top of other elements */
+  display: flex;
 }
 
-.about-us h2 {
-  font-size: 24px;
-  font-weight: bold;
-  color: white; /* Dark grey text */
-  margin-bottom: 10px;
-}
-
-.about-us ul {
-  font-size: 14px;
-  color: white;
-  line-height: 1.6;
-  margin: 5px 0;
-}
-
-.about-us p {
-  font-size: 18px;
-  color: white;
-  line-height: 1.6;
-  margin: 5px 0;
-}
-
-.about-us ul {
-  list-style: none;
-  padding: 0;
+.about-us a {
+  text-decoration: none;
+  background-color: white;
+  color: #0c8a0c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
   margin: 0;
-}
-
-.about-us ul li {
-  font-weight: bold;
-  color: whi;
+  margin-top: 10px;
 }
