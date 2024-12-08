@@ -29,7 +29,7 @@ const slotConfigurations = {
       "C2",
       "C3",
     ],
-    Motorcycle: ["E1", "E2", "E3", "E4", "E5", "E6"],
+    Motorcycle: ["D1", "D2", "D3", "D4", "D5", "D6"],
   },
 };
 
@@ -81,7 +81,7 @@ function displayNearestAvailableSlot() {
     .first();
   $("#nearest-slot").text(
     $availableSlot.length
-      ? `Nearest available slot: ${$availableSlot.text()}`
+      ? `NEAREST AVAILABLE SLOT: ${$availableSlot.text()}`
       : "No slots available"
   );
 }

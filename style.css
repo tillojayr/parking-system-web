@@ -28,6 +28,9 @@ body {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1,
@@ -224,4 +227,68 @@ button {
   /* font-size: 1.5em; */
   /* color: #333; */
   color: white;
+}
+
+.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container1 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container1 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container1 {
+    width: 1170px;
+  }
+}
+
+.about-us {
+  position: fixed; /* Fixes the element at the bottom of the viewport */
+  bottom: 0; /* Aligns the element to the bottom */
+  left: 0; /* Aligns it to the left edge */
+  width: 100%; /* Ensures it spans the entire width of the screen */
+  text-align: center;
+  padding: 20px;
+  z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.about-us h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white; /* Dark grey text */
+  margin-bottom: 10px;
+}
+
+.about-us ul {
+  font-size: 14px;
+  color: white;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.about-us p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-us ul li {
+  font-weight: bold;
+  color: whi;
 }
